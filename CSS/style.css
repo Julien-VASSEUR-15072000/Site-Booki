@@ -1,0 +1,580 @@
+@font-face {
+    font-family: "Raleway-Regular";
+    src: url(../Fonts/static/Raleway-Regular.ttf);
+}
+@font-face {
+    font-family: "Raleway-Bold";
+    src: url(../Fonts/static/Raleway-Bold.ttf);
+}
+
+/********************* Général *******************/
+
+body {
+    margin: auto;
+    max-width: 1440px;
+    padding: 0 50px;
+}
+
+h1,
+h2,
+h3,
+::placeholder {
+    font-family: "Raleway-Bold";
+    margin: 0;
+}
+
+.bold {
+    font-family: "Raleway-Bold";
+}
+
+p {
+    font-family: "Raleway-Regular";
+    margin: 0;
+}
+
+.flexRow {
+    display: flex;
+}
+
+.justifyContentSpaceBetween {
+    justify-content: space-between;
+}
+
+.justifyContentSpaceAround {
+    justify-content: space-around;
+}
+
+.justifyContentCenter {
+    justify-content: center;
+}
+
+.alignItemsCenter {
+    align-items: center;
+}
+
+i {
+    color: #0065FC;
+}
+
+.i000000{
+    color: #000000;
+}
+
+span {
+    font-family: "Raleway-Bold";
+}
+
+/*********************** Header **********************/
+
+header {
+    margin-top: 44px;
+}
+
+.marginTop20 {
+    margin-top: 20px;
+}
+
+.booki {
+    width: 61.09px;
+    height: 19px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    width: 381px;
+    padding: 0;
+    height: 19px;
+    margin: 0;
+}
+
+li,
+a {
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    font-family: "Raleway-Regular";
+}
+
+li a {
+    padding-top: 42px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+li a:hover {
+    color: #0065FC;
+    border-top: solid #0065FC 2px
+}
+
+/****************** section class"margin" *****************/
+
+.margin {
+    margin-top: 53px;
+}
+
+h1 {
+    margin-bottom: 8px;
+    font-size: 22px;
+}
+
+.p16 {
+    font-size: 16px;
+}
+
+form {
+    display: block;
+    border-collapse: collapse;
+}
+
+.divFormLeft {
+    position: relative;
+    width: 332px;
+    height: 49px;
+    background: #FFFFFF;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.aLeft {
+    width: 50px;
+    height: 49px;
+    left: 0%;
+    right: 84.94%;
+    top: 0%;
+    bottom: 0%;
+    background: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.inputLeft {
+    border: none;
+    font-family: 'Raleway-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: 17px;
+    color: #000000;
+}
+
+input::placeholder {
+    color: #000000;
+    opacity: 1;
+}
+
+input:focus {
+    outline: none;
+}
+
+.inputRight {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 16px;
+    justify-content: center;
+    position: absolute;
+    top: 189px;
+    left: 341px;
+    width: 132px;
+    height: 49px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Raleway-Bold';
+    background: #0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.filtre {
+    width: 914px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.filtre a {
+    font-family: "Raleway-Bold";
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    padding: 13px 18px;
+    margin: 2px 30px;
+}
+
+.filtre a:hover {
+    margin: 1px 28px;
+    padding: 14px 20px;
+    background: #DEEBFF;
+}
+
+.i {
+    padding: 7px 10px 7px 10px;
+    border: solid #DEEBFF 1px;
+    border-radius: 30px;
+    font-size: 10px;
+    margin-right: 11px;
+}
+
+.marginTop38 {
+    margin-top: 38px;
+}
+
+/******************* Main *******************/
+
+main {
+    margin-top: 44px;
+    margin-bottom: 61px;
+}
+
+main a {
+    display: block;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+.iDivTop {
+    font-size: 12px;
+    height: 13.5px;
+}
+
+.divTop {
+    display: flex;
+    justify-content: space-between;
+}
+
+.iGreyDivTop {
+    color: #F2F2F2;
+}
+
+    /****************** sectionLeft ****************/
+
+.h2SectionLeft {
+    margin-top: 42px;
+    margin-bottom: 7px;
+    font-size: 22px;
+    margin-left: 25px;
+}
+
+.sectionLeft {
+    max-width: 880px;
+    min-width: 600px;
+    background: #F2F2F2;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.p14 {
+    font-size: 14px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+.flexWrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img1SectionLeft {
+    width: 246px;
+    height: 124px;
+    border-radius: 20px 20px 0px 0px;
+    background-image: url(../Images_booki/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+    background-size: 108%;
+    background-position: center;
+}
+
+.img2SectionLeft {
+    width: 246px;
+    height: 124px;
+    border-radius: 20px 20px 0px 0px;
+    background-image: url(../Images_booki/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+    background-size: 103%;
+    background-position: center;
+}
+/* object-fit */
+/* ne pas répéter les width */
+.img3SectionLeft {
+    width: 246px;
+    height: 124px;
+    border-radius: 20px 20px 0px 0px;
+    background-image: url(../Images_booki/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+    background-size: 108%;
+    background-position: center;
+}
+
+.img4SectionLeft {
+    width: 246px;
+    height: 124px;
+    border-radius: 20px 20px 0px 0px;
+    background-image: url(../Images_booki/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+    background-size: 108%;
+    background-position: center;
+}
+
+.img5SectionLeft {
+    width: 246px;
+    height: 124px;
+    border-radius: 20px 20px 0px 0px;
+    background-image: url(../Images_booki/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+    background-size: 108%;
+    background-position: center;
+}
+
+.img6SectionLeft {
+    width: 246px;
+    height: 124px;
+    border-radius: 20px 20px 0px 0px;
+    background-image: url(../Images_booki/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+    background-size: 103%;
+    background-position: center;
+}
+
+.aSectionLeft {
+    width: 246px;
+    height: 199px;
+    border: solid #FFFFFF 5px;
+    border-radius: 20px;
+    margin: 15px;
+    background: #FFFFFF;
+}
+
+.divH3PILeft {
+    margin-left: 11px;
+    margin-bottom: 6px;
+    margin-top: 4px;
+}
+
+.AfficherPLus {
+    margin-top: 40px;
+    margin-bottom: 5px;
+    margin-left: 25px;
+}
+
+    /****************** aside *******************/
+
+.sectionRight {
+    max-width: 420px;
+    background: #F2F2F2;
+    border-radius: 20px;
+    margin-left: 20px;
+    padding: 41px 40px 1px 37px;
+}
+
+.h2Aside {
+    margin-bottom: 26px;
+}
+
+.iTopAside {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.img1Aside {
+    width: 137px;
+    height: 144px;
+    border-radius: 20px 0px 0px 20px;
+    background-image: url(../Images_booki/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+    background-size: 170%;
+    background-position: center;
+}
+
+.img2Aside {
+    width: 137px;
+    height: 144px;
+    border-radius: 20px 0px 0px 20px;
+    background-image: url(../Images_booki/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg);
+    background-size: 155%;
+    background-position: center;
+}
+
+.img3Aside {
+    width: 137px;
+    height: 144px;
+    border-radius: 20px 0px 0px 20px;
+    background-image: url(../Images_booki/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+    background-size: 105%;
+    background-position: center;
+}
+
+.aAside {
+    width: 343px;
+    height: 144px;
+    border: solid #FFFFFF 5px;
+    border-radius: 20px;
+    margin-bottom: 33px;
+    background: #FFFFFF;
+}
+
+.h3PIAside {
+    margin-left: 14px;
+    margin-top: 11px;
+    width: 169px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;;
+}
+
+.divIAdise {
+    margin-bottom: 7px;
+}
+
+    /******************* sectionBottom ********************/
+
+.sectionBottom {
+    margin-top: 60px;
+}
+
+.h2SectionBottom {
+    margin-bottom: 18px;
+}
+
+.aSectionBottom {
+    height: 445px;
+    width: 302px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 0px #D9D9D9;
+}
+
+.imgSectionBottom {
+    width: 302px;
+    height: 389px;
+    border-radius: 20px 20px 0px 0px;
+    vertical-align: top;
+}
+
+.img1SectionBottom {
+    width: 302px;
+    height: 389px;
+    border-radius: 20px 20px 0px 0px;
+    vertical-align: top;
+    background-image: url(../Images_booki/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+    background-size: 200%;
+    background-position: center;
+}
+
+.img2SectionBottom {
+    width: 302px;
+    height: 389px;
+    border-radius: 20px 20px 0px 0px;
+    vertical-align: top;
+    background-image: url(../Images_booki/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+    background-size: 100%;
+    background-position: center;
+}
+
+.img3SectionBottom {
+    width: 302px;
+    height: 389px;
+    border-radius: 20px 20px 0px 0px;
+    vertical-align: top;
+    background-image: url(../Images_booki/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+    background-size: 220%;
+    background-position: center;
+}
+
+.img4SectionBottom {
+    width: 302px;
+    height: 389px;
+    border-radius: 20px 20px 0px 0px;
+    vertical-align: top;
+    background-image: url(../Images_booki/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+    background-size: 220%;
+    background-position: center;
+}
+
+.divPSectionBottom {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    margin-left: 19px;
+}
+
+/****************** Footer ********************/
+
+footer {
+    width: auto;
+    height: 180px;
+    background: #F2F2F2;
+    padding: 45px 0px 0px 70px;
+}
+
+.divFooter {
+    width: 500px;
+}
+
+.h2Footer {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.pFooter {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+@media screen and (max-width: 1024px) {
+    
+    /************* header **************/
+
+    header {
+        margin-left: 70px;
+        margin-right: 70px;
+        width: auto;
+    }
+    
+    ul {
+        width: 240px;
+        justify-content: space-between;
+    }
+
+    li a {
+        padding: 0px;
+    }
+
+    li a:hover {
+        color: #000000;
+        border-top: transparent;
+    }
+
+    /***************** section class="margin" ***************/
+
+    .margin {
+        margin-left: 70px;
+    }
+
+    .filtre a:hover {
+        padding: 13px 18px;
+        margin: 2px 30px;
+        background: #FFFFFF;
+    }
+
+    /****************** Main *****************/
+
+    .divTop {
+        flex-direction: column;
+    }
+
+    /****************** sectionLeft *************/
+
+    .sectionLeft {
+        margin-bottom: 53px;
+    }
+
+    /****************** aside *****************/
+
+    aside {
+        display: flex;
+        width: auto;
+    }
+}
+/* 586 */
