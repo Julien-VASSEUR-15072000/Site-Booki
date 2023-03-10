@@ -64,11 +64,16 @@ span {
     font-family: "Raleway-Bold";
 }
 
-/*********************** Header **********************/
-
-header {
+header,
+main {
     margin-top: 44px;
 }
+
+.boxShadow {
+    box-shadow: 0px 0px 15px 0px #D9D9D9;
+}
+
+/*********************** Header **********************/
 
 .marginTop20 {
     margin-top: 20px;
@@ -97,9 +102,7 @@ a {
 }
 
 li a {
-    padding-top: 42px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 42px 20px 0px 20px;
 }
 
 li a:hover {
@@ -125,6 +128,7 @@ h1 {
 form {
     display: block;
     border-collapse: collapse;
+    position: relative;
 }
 
 .divFormLeft {
@@ -141,10 +145,6 @@ form {
 .aLeft {
     width: 50px;
     height: 49px;
-    left: 0%;
-    right: 84.94%;
-    top: 0%;
-    bottom: 0%;
     background: #F2F2F2;
     border: 1px solid #F2F2F2;
     border-radius: 15px 0px 0px 15px;
@@ -180,10 +180,9 @@ input:focus {
     padding: 15px 16px;
     justify-content: center;
     position: absolute;
-    top: 189px;
-    left: 341px;
+    left: 291px;
     width: 132px;
-    height: 49px;
+    height: 50px;
     color: white;
     font-size: 18px;
     font-family: 'Raleway-Bold';
@@ -230,7 +229,6 @@ input:focus {
 /******************* Main *******************/
 
 main {
-    margin-top: 44px;
     margin-bottom: 61px;
 }
 
@@ -259,10 +257,8 @@ h3 {
     /****************** sectionLeft ****************/
 
 .h2SectionLeft {
-    margin-top: 42px;
-    margin-bottom: 7px;
     font-size: 22px;
-    margin-left: 25px;
+    margin: 42px 0px 7px 25px;
 }
 
 .sectionLeft {
@@ -275,8 +271,7 @@ h3 {
 
 .p14 {
     font-size: 14px;
-    margin-top: 9px;
-    margin-bottom: 9px;
+    margin: 9px 0px;
 }
 
 .flexWrap {
@@ -302,15 +297,11 @@ h3 {
 }
 
 .divH3PILeft {
-    margin-left: 11px;
-    margin-bottom: 6px;
-    margin-top: 4px;
+    margin: 4px 0px 6px 11px;
 }
 
 .AfficherPLus {
-    margin-top: 40px;
-    margin-bottom: 5px;
-    margin-left: 25px;
+    margin: 40px 0px 5px 25px;
 }
 
     /****************** sectionRight *******************/
@@ -349,8 +340,7 @@ h3 {
 }
 
 .h3PISectionRight {
-    margin-left: 14px;
-    margin-top: 11px;
+    margin: 11px 0px 0px 14px;
     width: 169px;
     display: flex;
     flex-direction: column;
@@ -375,7 +365,6 @@ h3 {
     height: 445px;
     width: 302px;
     border-radius: 20px;
-    box-shadow: 0px 0px 15px 0px #D9D9D9;
 }
 
 .imgSectionBottom {
@@ -466,9 +455,9 @@ footer {
 
     /****************** aside *****************/
 
-    aside {
+    /* .sectionRight {
         display: flex;
         width: auto;
-    }
+    } */
 }
-/* 586 */
+/* 474 */
