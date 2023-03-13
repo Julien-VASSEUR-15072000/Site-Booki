@@ -10,9 +10,9 @@
 /********************* Général *******************/
 
 body {
-    margin: auto;
-    max-width: 1440px;
+    max-width: 1340px;
     padding: 0 50px;
+    margin: auto;
 }
 
 h1,
@@ -50,6 +50,16 @@ p {
 
 .alignItemsCenter {
     align-items: center;
+}
+
+.flexWrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.FlexDirectionColumn {
+    display: flex;
+    flex-direction: column;
 }
 
 i {
@@ -204,13 +214,14 @@ input:focus {
     background: #FFFFFF;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
-    padding: 13px 18px;
-    margin: 2px 30px;
+    padding: 14px 20px;
+    margin: 2px 2px;
 }
 
 .filtre a:hover {
-    margin: 1px 28px;
-    padding: 14px 20px;
+    transition: 0.5s;
+    margin: 0px 0px;
+    padding: 16px 22px;
     background: #DEEBFF;
 }
 
@@ -248,25 +259,28 @@ h3 {
 .divTop {
     display: flex;
     justify-content: space-between;
+    max-width: 1340px;
 }
 
 .iGreyDivTop {
     color: #F2F2F2;
 }
 
-    /****************** sectionLeft ****************/
-
-.h2SectionLeft {
+.h2DivTop {
     font-size: 22px;
-    margin: 42px 0px 7px 25px;
+    margin-bottom: 25px;
 }
 
+    /****************** sectionLeft ****************/
+
 .sectionLeft {
-    max-width: 880px;
+    width: 800px;
     min-width: 600px;
+    height: 586px;
     background: #F2F2F2;
     border-radius: 20px;
     margin-right: 20px;
+    padding: 40px;
 }
 
 .p14 {
@@ -274,26 +288,24 @@ h3 {
     margin: 9px 0px;
 }
 
-.flexWrap {
-    display: flex;
-    flex-wrap: wrap;
+.divLines {
+    width: 90.9%;
+}
+
+.aSectionLeft {
+    width: 30.75%;
+    height: 199px;
+    border: solid #FFFFFF 5px;
+    border-radius: 20px;
+    background: #FFFFFF;
 }
 
 .imgSectionLeft {
     object-fit: cover;
-    width: 246px;
+    width: 100%;
     height: 124px;
     border-radius: 20px 20px 0px 0px;
     vertical-align: top;
-}
-
-.aSectionLeft {
-    width: 246px;
-    height: 199px;
-    border: solid #FFFFFF 5px;
-    border-radius: 20px;
-    margin: 15px;
-    background: #FFFFFF;
 }
 
 .divH3PILeft {
@@ -307,20 +319,33 @@ h3 {
     /****************** sectionRight *******************/
 
 .sectionRight {
-    max-width: 420px;
+    width: 420px;
     background: #F2F2F2;
     border-radius: 20px;
     margin-left: 20px;
-    padding: 41px 40px 1px 37px;
 }
 
-.h2Aside {
-    margin-bottom: 26px;
+.divH2ISectionRight{
+    margin: 40px 0px 45px 0px;
 }
 
-.iTopAside {
+.h2SectionRight {
+    font-size: 22px;
+    margin: 0px 0px 0px 35px;
+}
+
+.iTopSectionRight {
     font-size: 18px;
-    margin-top: 5px;
+    margin: 5px 40px 0px 0px;
+}
+
+.aSectionRight {
+    width: 81.7%;
+    height: 144px;
+    border: solid #FFFFFF 5px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    background: #FFFFFF;
 }
 
 .imgSectionRight {
@@ -330,21 +355,12 @@ h3 {
     border-radius: 20px 0px 0px 20px;
 }
 
-.aSectionRight {
-    width: 343px;
-    height: 144px;
-    border: solid #FFFFFF 5px;
-    border-radius: 20px;
-    margin-bottom: 33px;
-    background: #FFFFFF;
-}
-
-.h3PISectionRight {
-    margin: 11px 0px 0px 14px;
+.divH3PISectionRight {
+    margin: 11px 22px 0px 15px;
     width: 169px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;;
+    justify-content: space-between;
 }
 
 .divISectionRight {
@@ -362,14 +378,14 @@ h3 {
 }
 
 .aSectionBottom {
+    width: 22.5%;
     height: 445px;
-    width: 302px;
     border-radius: 20px;
 }
 
 .imgSectionBottom {
     object-fit: cover;
-    width: 302px;
+    width: 100%;
     height: 389px;
     border-radius: 20px 20px 0px 0px;
     vertical-align: top;
@@ -406,15 +422,13 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
+
+    body {
+        padding: 0 70px;
+    }
     
     /************* header **************/
 
-    header {
-        margin-left: 70px;
-        margin-right: 70px;
-        width: auto;
-    }
-    
     ul {
         width: 240px;
         justify-content: space-between;
@@ -430,9 +444,8 @@ footer {
     }
 
     /***************** section class="margin" ***************/
-
-    .margin {
-        margin-left: 70px;
+    .filtre {
+        width: 820px;
     }
 
     .filtre a:hover {
@@ -447,17 +460,46 @@ footer {
         flex-direction: column;
     }
 
-    /****************** sectionLeft *************/
+    /****************** sectionLeft ***********/
+
+
 
     .sectionLeft {
-        margin-bottom: 53px;
+        margin: auto;
+        margin-bottom: 50px;
     }
 
-    /****************** aside *****************/
+    /************** sectionRight **************/
 
-    /* .sectionRight {
-        display: flex;
-        width: auto;
-    } */
+    .sectionRight {
+       width: 880px;
+       margin: 0;
+    }
+
+    .aSectionRight {
+        width: 252px;
+        margin: 15px 12px 40px 12px;
+    }
+
+    .imgSectionRight {
+        width: 106px;
+    }
+
+    .divH3PISectionRight {
+        margin-right: 20px;
+    }
+
+    /************ SectionBottom ************/
+
+    .aSectionBottom {
+        height: 267px;
+    }
+
+    .imgSectionBottom {
+        height: calc(267px - 56px);
+    }
+
+    .h2SectionBottom {
+        margin-bottom: 35px;
+    }
 }
-/* 474 */
