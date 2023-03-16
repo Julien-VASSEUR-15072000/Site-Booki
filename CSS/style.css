@@ -275,15 +275,15 @@ h3 {
     font-size: 16px;
 }
 
-.iDivTop {
-    font-size: 12px;
-    height: 13.5px;
-}
-
 .divTop {
     display: flex;
     justify-content: space-between;
     max-width: 1340px;
+}
+
+.iDivTop {
+    font-size: 12px;
+    height: 13.5px;
 }
 
 .iGreyDivTop {
@@ -299,8 +299,8 @@ h3 {
 
 .sectionLeft {
     width: 800px;
-    min-width: 600px;
-    height: 586px;
+    min-width: 450px;
+    height: 100%;
     background: #F2F2F2;
     border-radius: 20px;
     margin-right: 20px;
@@ -309,7 +309,9 @@ h3 {
 
 .aSectionLeft {
     width: 30.75%;
+    min-width: 195px;
     height: 199px;
+    margin-bottom: 15px;
     border: solid #FFFFFF 5px;
     border-radius: 20px;
     background: #FFFFFF;
@@ -341,7 +343,7 @@ h3 {
 }
 
 .divH2ISectionRight{
-    margin: 40px 0px 45px 0px;
+    margin: 40px 0px 25px 0px;
 }
 
 .h2SectionRight {
@@ -354,12 +356,17 @@ h3 {
     margin: 5px 40px 0px 0px;
 }
 
+.divASectionRight {
+    display: flex;
+    flex-direction: column;
+    height: 81%;
+}
+
 .aSectionRight {
     width: 81.7%;
     height: 144px;
     border: solid #FFFFFF 5px;
     border-radius: 20px;
-    margin-bottom: 30px;
     background: #FFFFFF;
 }
 
@@ -437,10 +444,10 @@ footer {
 }
 
 
-/******************************************************* Media querie 1190px ********************************************************/
+/******************************************************* Media querie 1024px ********************************************************/
 
 
-@media screen and (max-width: 1190px) {
+@media screen and (max-width: 1024px) {
 
     body {
         padding: 0 70px;
@@ -466,6 +473,10 @@ footer {
 
     .filtre {
         width: 93.2%;
+    }
+
+    .divFiltre a {
+        font-size: 11px;
     }
 
     .filtre a:hover {
@@ -498,12 +509,14 @@ footer {
 
     .divASectionRight {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
-        flex-wrap: nowrap;
+        justify-content: center;
     }
 
     .aSectionRight {
         width: 28.6%;
+        min-width: 233px;
         margin: 15px 12px 40px 12px;
     }
 
@@ -535,20 +548,10 @@ footer {
 }
 
 
-/******************************************************* Media query 980px ********************************************************/
-
-@media screen and (max-width: 980px){
-    .divFiltre a {
-        font-size: 11px;
-    }
-
-    
-}
-
 /******************************************************* Media query 820px ********************************************************/
 
 
-@media screen and (max-width: 820px){
+@media screen and (max-width: 768px){
 
     body {
         padding: 0px;
@@ -611,7 +614,7 @@ footer {
     .inputRechercher {
         display: none;
     }
-    
+
     .filtre {
         flex-direction: column;
         width: 100%;
@@ -723,7 +726,7 @@ footer {
 
     footer {
         flex-direction: column;
-        padding: 0;
+        padding-left: 0;
         height: 100%;
     }
 
