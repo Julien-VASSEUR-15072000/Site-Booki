@@ -23,6 +23,15 @@ h3,
     margin: 0;
 }
 
+.p14 {
+    font-size: 14px;
+    margin: 9px 0px;
+}
+
+.p16 {
+    font-size: 16px;
+}
+
 .bold {
     font-family: "Raleway-Bold";
 }
@@ -57,7 +66,7 @@ p {
     flex-wrap: wrap;
 }
 
-.FlexDirectionColumn {
+.flexDirectionColumn {
     display: flex;
     flex-direction: column;
 }
@@ -66,8 +75,12 @@ i {
     color: #0065FC;
 }
 
-.i000000{
+.i000000 {
     color: #000000;
+}
+
+.iFFFFFF {
+    color: #FFFFFF;
 }
 
 span {
@@ -85,12 +98,8 @@ main {
 
 /*********************** Header **********************/
 
-.marginTop20 {
-    margin-top: 20px;
-}
-
 .booki {
-    width: 61.09px;
+    width: 61px;
     height: 19px;
 }
 
@@ -120,9 +129,9 @@ li a:hover {
     border-top: solid #0065FC 2px
 }
 
-/****************** section class"margin" *****************/
+/************* section class="sectionInput" *************/
 
-.margin {
+.sectionInput {
     margin-top: 53px;
 }
 
@@ -131,20 +140,13 @@ h1 {
     font-size: 22px;
 }
 
-.p16 {
-    font-size: 16px;
-}
-
 form {
+    position: relative;
+    margin-top: 20px;
     display: block;
     border-collapse: collapse;
-    position: relative;
-}
-
-.divFormLeft {
-    position: relative;
-    width: 332px;
-    height: 49px;
+    max-width: 332px;
+    height: 50px;
     background: #FFFFFF;
     border: 1px solid #F2F2F2;
     border-radius: 15px;
@@ -166,11 +168,13 @@ form {
 
 .inputLeft {
     border: none;
+    width: 62.6%;
     font-family: 'Raleway-Bold';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     margin-left: 17px;
+    padding-right: 5px;
     color: #000000;
 }
 
@@ -183,22 +187,37 @@ input:focus {
     outline: none;
 }
 
-.inputRight {
+.button {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 15px 16px;
     justify-content: center;
-    position: absolute;
-    left: 291px;
-    width: 132px;
-    height: 50px;
-    color: white;
+    color: #FFFFFF;
     font-size: 18px;
-    font-family: 'Raleway-Bold';
+    width: 50px;
+    height: 52px;
     background: #0065FC;
-    border: 1px solid #0065FC;
-    border-radius: 0px 15px 15px 0px;
+    border-radius: 0px 20px 20px 0px;
+    border: none;
+
+    font-family: 'Raleway-Bold';
+}
+
+.inputRechercher {
+    display: flex;
+    position: absolute;
+    left: 84.9%;
+    top: -1px;
+    width: 132px;
+    height: 52px;
+    justify-content: center;
+    align-items: center;
+    background: #0065FC;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.loupe {
+    display: none;
 }
 
 .filtre {
@@ -208,20 +227,25 @@ input:focus {
     align-items: center;
 }
 
+.divFiltre {
+    width: 90%;
+}
+
 .filtre a {
     font-family: "Raleway-Bold";
     box-sizing: border-box;
     background: #FFFFFF;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
+    font-size: 17px;
     padding: 14px 20px;
     margin: 2px 2px;
 }
 
 .filtre a:hover {
-    transition: 0.5s;
-    margin: 0px 0px;
+    transition: 0.2s;
     padding: 16px 22px;
+    margin: 0px 0px;
     background: #DEEBFF;
 }
 
@@ -281,15 +305,6 @@ h3 {
     border-radius: 20px;
     margin-right: 20px;
     padding: 40px;
-}
-
-.p14 {
-    font-size: 14px;
-    margin: 9px 0px;
-}
-
-.divLines {
-    width: 90.9%;
 }
 
 .aSectionLeft {
@@ -421,7 +436,11 @@ footer {
     margin-bottom: 12px;
 }
 
-@media screen and (max-width: 1024px) {
+
+/******************************************************* Media querie 1190px ********************************************************/
+
+
+@media screen and (max-width: 1190px) {
 
     body {
         padding: 0 70px;
@@ -443,14 +462,15 @@ footer {
         border-top: transparent;
     }
 
-    /***************** section class="margin" ***************/
+    /*********** section class="sectionInput" ***********/
+
     .filtre {
-        width: 820px;
+        width: 93.2%;
     }
 
     .filtre a:hover {
-        padding: 13px 18px;
-        margin: 2px 30px;
+        padding: 14px 20px;
+        margin: 2px 2px;
         background: #FFFFFF;
     }
 
@@ -462,31 +482,41 @@ footer {
 
     /****************** sectionLeft ***********/
 
-
-
     .sectionLeft {
-        margin: auto;
-        margin-bottom: 50px;
+        width: calc(100% - 80px);
+        min-width: 350px;
+        margin: 0px 0px 50px 0px;
     }
 
     /************** sectionRight **************/
 
     .sectionRight {
-       width: 880px;
+       width: 100%;
+       min-width: none;
        margin: 0;
     }
 
+    .divASectionRight {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
     .aSectionRight {
-        width: 252px;
+        width: 28.6%;
         margin: 15px 12px 40px 12px;
     }
 
     .imgSectionRight {
-        width: 106px;
+        width: 42.1%;
     }
 
     .divH3PISectionRight {
-        margin-right: 20px;
+        margin-right: 10px;
+    }
+
+    .p14 {
+        font-size: 13px;
     }
 
     /************ SectionBottom ************/
@@ -502,4 +532,212 @@ footer {
     .h2SectionBottom {
         margin-bottom: 35px;
     }
+}
+
+
+/******************************************************* Media query 980px ********************************************************/
+
+@media screen and (max-width: 980px){
+    .divFiltre a {
+        font-size: 11px;
+    }
+
+    
+}
+
+/******************************************************* Media query 820px ********************************************************/
+
+
+@media screen and (max-width: 820px){
+
+    body {
+        padding: 0px;
+    }
+
+    /******************** header ******************/
+
+    .divHeader {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .booki {
+        margin-bottom: 48px;
+    }
+
+    nav {
+        width: 100%;
+        height: 44px;
+    }
+
+    ul {
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    li {
+        width: 50%;
+    }
+
+    li a {
+        width: 100%;
+        display: block;
+        padding-bottom: 23px;
+        font-size: 16px;
+        border-bottom: solid #F2F2F2 2px;
+        text-align: center;
+    }
+
+    li a:hover {
+        border-bottom: solid #0065FC 2px;
+        color: #0065FC;
+    }
+
+    /*********** section class="sectionInput" ***********/
+
+    .sectionInput {
+        margin: 31px 20px 0px 20px;
+    }
+
+    .divFormLeft {
+        min-width: 0;
+    }
+
+    .loupe {
+        display: flex;
+    }
+
+    .inputRechercher {
+        display: none;
+    }
+    
+    .filtre {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 34px;
+    }
+    
+    .pSectionInput {
+        width: 100%;
+        margin: 0px 0px 13px 0px;
+    }
+
+    .divFiltre {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .filtre a {
+        width: 48%;
+    }
+
+    /************** main *************/
+
+    .divTop {
+        flex-direction: column-reverse;
+    }
+
+    .h2DivTop {
+        width: 89.3%;
+        margin: auto;
+        margin-bottom: 19px;
+    }
+
+    /************** sectionLeft ***********/
+
+    .sectionLeft {
+        padding: 0;
+        width: 100%;
+        background: none;
+        min-width: auto;
+    }
+
+    .divLines {
+        flex-direction: column;
+    }
+
+    .aSectionLeft {
+        width: 89.3%;
+        margin: auto;
+        margin-bottom: 12px;
+    }
+
+    .sectionLeft {
+        height: 100%;
+    }
+
+    .AfficherPLus {
+        display: none;
+    }
+
+    /*************** sectionRight ************/
+
+    .h2SectionRight {
+        margin: 0;
+    }
+
+    .iTopSectionRight {
+        margin: 5px 0px 0px 0px;
+    }
+
+    .sectionRight {
+        padding: 28px 0px 35px 0px;
+        margin-bottom: 26px;
+        border-radius: 0px;
+    }
+
+    .divASectionRight {
+        flex-direction: column;
+    }
+
+    .aSectionRight {
+        width: 89.3%;
+        margin: auto;
+        margin-bottom: 12px;
+    }
+
+    /********** sectionBottom ***********/
+
+    .sectionBottom {
+        height: 100%;
+        margin-top: 0;
+    }
+
+    .divSectionBottom {
+        flex-direction: column;
+    }
+
+    .aSectionBottom {
+        width: 89.3%;
+        margin: auto;
+        margin-bottom: 24px;
+        height: 190px;
+    }
+
+    .imgSectionBottom {
+        height: 134px;
+    }
+
+    /********** footer *********/
+
+    footer {
+        flex-direction: column;
+        padding: 0;
+        height: 100%;
+    }
+
+    .divFooter {
+        width: 89.3%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    
+    .h2SectionBottom {
+        width: 89.3%;
+        margin: auto;
+        margin-bottom: 19px;
+    }
+
+    
 }
